@@ -1,0 +1,199 @@
+
+*{
+    box-sizing: border-box;
+}
+
+/* Header */
+/* Note: Header Style Luck */
+header{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #ffffff 60%, #000000 60%);
+    background-size: 200%;
+    background-position-x: -1400px;
+    width: 100%;
+}
+
+header nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 2rem;
+}
+
+header ul{
+    padding: 2rem 0 0 0;
+}
+
+header a{
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/* Body */
+body{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(70deg, #ffffff 30%, #5f5f5f 60%);
+}
+
+/* About Me */
+h2{
+    text-align: right;
+    width: 200px;
+    padding: 0 1rem 0 0;
+}
+
+#about-me img{
+    width: 200px;
+    height: auto;
+    border: 2px solid white;
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+p{
+    width: 600px;
+    padding: 0.5rem 0 0 2rem;
+}
+
+section{
+    display: flex;
+    padding: 1rem 0;
+}
+
+/* Portfolio Work */
+.work-container{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+#main-card{
+    width: 100%;
+    height: auto;
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards-container .card a img{
+    width: 400px;
+    height: 300px;
+}
+
+img{
+    border: 2px solid black;
+}
+
+img:hover{
+    border: 2px solid blue;
+}
+
+/* Caption in Image */
+.main-card{
+    position: relative;
+}
+
+.cards-container .card{
+    position: relative;
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+.bottom-left{
+    position: absolute;
+    bottom: 20px;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+}
+
+/* Contact */
+#contact ul{
+    width: 800px;
+    padding: 0;
+}
+
+#contact ul li{
+    display: inline-block;
+    padding: 0.6rem 3.5rem;
+}
+
+#contact a{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Work Portfolio Image Resizing */
+@media screen and (max-width: 1033px) {
+    .cards-container .card a img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Header Animation */
+@media screen and (max-width: 1200px) {
+    h1{
+        color: white;
+    }
+}
+
+@media screen and (max-width: 733px) {
+    h1{
+        color: black;
+    }
+}
+
+@media screen and (max-width: 1347px) {
+    #fourth-header-link{
+        color:rgba(0, 0, 0, 0.856);
+    }
+}
+
+@media screen and (max-width: 1224px) {
+    #third-header-link{
+        color:rgba(0, 0, 0, 0.856);
+    }
+}
+
+@media screen and (max-width: 1115px) {
+    #second-header-link{
+        color:rgba(0, 0, 0, 0.856);
+    }
+}
+
+@media screen and (max-width: 642px) {
+    #fourth-header-link{
+        color:black;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    #third-header-link{
+        color:rgba(255, 255, 255, 0.856);
+    }
+}
+
+@media screen and (max-width: 558px) {
+    #second-header-link{
+        color:rgba(255, 255, 255, 0.856);
+    }
+}
+
+@media screen and (max-width: 1005px) {
+    #first-header-link{
+        color:rgba(0, 0, 0, 0.856);
+    }
+}
+
+@media screen and (max-width: 508px) {
+    #first-header-link{
+        color:white;
+    }
+    #fourth-header-link{
+        color:white;
+    }
+}
